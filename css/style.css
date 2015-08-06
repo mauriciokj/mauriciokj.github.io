@@ -397,6 +397,10 @@
 		opacity: 1.0;
 	}
 
+	.h3_white {
+		color: white;
+	}
+
 	.formerize-placeholder {
 		color: #858585 !important;
 		opacity: 1.0;
@@ -636,6 +640,22 @@
 				ul.icons li .icon:before {
 					font-size: 2em;
 				}
+
+				ul.icons li .icon_small:before {
+					font-size: 1em;
+				}
+
+
+		.icon.rounded_small {
+			background-color: #383b43;
+			border-radius: 100%;
+			display: inline-block;
+			height: 1.5em;
+			line-height: 1.5em;
+			text-align: center;
+			width: 1.5em;
+		}
+
 
 		ul.actions {
 			cursor: default;

@@ -7,20 +7,27 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Frete Agil - Encontre seu frete rapidamente.</title>
+		<title>Frete Ágil - Busque e encontre seu frete de maneira ágil.</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="O frete agil possibilita anunciar e buscar fretes, anunciar e buscar veículos para realização do frete." />
+		<meta name="description" content="O frete agil possibilita anunciar e buscar fretes para motoristas, e para transportadoras e distribuidoras ancie e busque veículos para realização do frete." />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/custom.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
+		<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/lead-tracking/0.1.2/lead-tracking.min.js"></script>
+		<script type="text/javascript">
+		  LeadTracking.init({ token: 'bcc49d02eaa402128d828b0ebccc8217' });
+		</script>
+		<script type ='text/javascript' src="https://d335luupugsy2.cloudfront.net/js/integration/0.3.0/rd-js-integration.min.js"></script>
+		<script type="text/javascript">
 			<script type="text/javascript">
 	    var _gaq = _gaq || [];
 	    _gaq.push(['_setAccount', 'UA-65191631-1']);
@@ -37,21 +44,23 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="index.html">Frete Agil</a></h1>
+				<h1><a href="/">Frete Agil</a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Principal</a></li>
+						<li><a href="/">Principal</a></li>
+						<li><a href="/comofunciona.html">Como Funciona</a></li>
+						<!-- <li><a href="#" class="button special">Acessar</a></li> -->
 					</ul>
 				</nav>
 			</header>
 
 		<!-- Banner -->
 			<section id="banner">
-				<h2>Frete Agil.</h2>
-				<p>Encontre e distribua seu frete de maneira agil e rapida.</p>
+				<h2>Frete Ágil.</h2>
+				<p>Encontre e distribua seu frete de maneira ágil e rapida.</p>
 				<ul class="actions">
 					<li>
-						<a href="#" class="button big">Comece a usar</a>
+						<a href="comofunciona.html" class="button big">Como Funciona</a>
 					</li>
 				</ul>
 			</section>
@@ -61,29 +70,35 @@
 				<div class="container">
 					<header class="major">
 						<h2>Conheça nossos segmentos de atuação</h2>
-						<p>Trabalhamos com as distribuidoras, transportadoras e com motoristas!</p>
+						<p>Distribuidoras, Transportadoras e motoristas têm o lugar certo para anunciar e encontrar fretes de forma ágil.</p>
 					</header>
 					<div class="row 150%">
 						<div class="4u 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color1 fa-building-o"></i>
-								<h3>Distribuidoras</h3>
-								<p>Cadastre seu <strong>frete</strong> e o destino, ajudaremos você a encontrar quem leve ele pelos melhores preços e com a maior segurança.</p>
-							</section>
+							<a href="comofunciona.html#distribuidoras">
+								<section class="box">
+									<i class="icon big rounded color1 fa-building-o"></i>
+									<h3>Distribuidoras</h3>
+									<p>Libere espaço no armazém. Anuncie e tenha se <strong>frete</strong> entregue pelo menor preço e de maneira segura.</p>
+								</section>
+							</a>
 						</div>
 						<div class="4u 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color2 fa-truck"></i>
-								<h3>Transportadoras</h3>
-								<p>Busque <strong>frete</strong> para seus veículos e redirecione ele diretamente para o celular do seu motorista.</p>
-							</section>
+							<a href="comofunciona.html#transportadoras">
+								<section class="box">
+									<i class="icon big rounded color2 fa-truck"></i>
+									<h3>Transportadoras</h3>
+									<p>Não perca dinheiro com caminhão parado. Encontre <strong>frete</strong> para seu motorista onde ele estiver.</p>
+								</section>
+							</a>
 						</div>
 						<div class="4u$ 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color7 fa-male"></i>
-								<h3>Motoristas</h3>
-								<p>Receba propostas para <strong>frete</strong> diretamente nos seus celulares sem custo nenhum de utilização.</p>
-							</section>
+							<a href="comofunciona.html#motoristas">
+								<section class="box">
+									<i class="icon big rounded color7 fa-male"></i>
+									<h3>Motoristas</h3>
+									<p>Não desperdice seu tempo. Receba as melhores propostas de <strong>frete</strong> aonde você estiver e para onde você quer ir.</p>
+								</section>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -94,27 +109,56 @@
 				<div class="container">
 					<header class="major">
 						<h2>Quem somos</h2>
-						<p>Nossa equipes está focada auxiliar sua empresa na distribuição e busca do seu <strong>frete</strong> de maneira agil.</p>
+						<p>Nossa equipes está focada auxiliar sua empresa na distribuição e busca do seu <strong>frete</strong> de maneira ágil.</p>
 					</header>
 					<section class="profiles">
 						<div class="row">
 							<section class="6u 6u(medium) 12u$(xsmall) profile">
-								<img src="images/profile_placeholder.gif" alt="" />
+								<img src="images/mauricio.jpg" alt="frete agil mauricio" />
+
 								<h4>Mauricio Krzesinski Junior</h4>
 								<p>Frase Matadora</p>
+								<ul class="icons">
+									<li>
+										<a href="https://www.facebook.com/mauricio.krzesinski.1" class="icon icon_small rounded rounded_small fa-facebook"><span class="label">Facebook</span></a>
+									</li>
+									<li>
+										<a href="http://twitter.com/mauricio_junior" class="icon icon_small rounded rounded_small fa-twitter"><span class="label">Twitter</span></a>
+									</li>
+									<li>
+										<a  href="https://plus.google.com/u/0/+MauricioJuniorbr/posts" class="icon icon_small rounded rounded_small fa-google-plus"><span class="label">Google+</span></a>
+									</li>
+									<li>
+										<a href='https://br.linkedin.com/in/mauriciokj' class="icon icon_small rounded rounded_small fa-linkedin"><span class="label">LinkedIn</span></a>
+									</li>
+								</ul>
 							</section>
 							<section class="6u 6u$(medium) 12u$(xsmall) profile">
-								<img src="images/profile_placeholder.gif" alt="" />
+								<img src="images/thiago.jpg" alt="frete agil thiago" />
 								<h4>Thiago Rafael Casagrande</h4>
 								<p>Não sou tão descolado assim</p>
+								<ul class="icons">
+									<li>
+										<a href="https://www.facebook.com/Thiago.RC.38" class="icon icon_small rounded rounded_small fa-facebook"><span class="label">Facebook</span></a>
+									</li>
+									<li>
+										<a href="http://twitter.com/thiagocasao" class="icon icon_small rounded rounded_small fa-twitter"><span class="label">Twitter</span></a>
+									</li>
+									<li>
+										<a  href="https://plus.google.com/107763445737776429253/posts" class="icon icon_small rounded rounded_small fa-google-plus"><span class="label">Google+</span></a>
+									</li>
+									<li>
+										<a href='https://br.linkedin.com/in/thiagorafaelcasagrande' class="icon icon_small rounded rounded_small fa-linkedin"><span class="label">LinkedIn</span></a>
+									</li>
+								</ul>
 							</section>
 						</div>
 					</section>
 					<footer>
-						<p>Saiba mais sobre a nossa empresa e como trabalhamos, nosso objetivo é trazer confiança e agilidade para nossos clientes e parceiros!</p>
+						<!-- <p>Saiba mais sobre a nossa empresa e como trabalhamos, nosso objetivo é trazer confiança e agilidade para nossos clientes e parceiros!</p> -->
 						<ul class="actions">
 							<li>
-								<a href="#" class="button big">Saiba mais</a>
+								<!-- <a href="#" class="button big">Conheça nosso Blog</a> -->
 							</li>
 						</ul>
 					</footer>
@@ -130,7 +174,9 @@
 					</header>
 				</div>
 				<div class="container 50%">
-					<form action="#" method="post">
+					<form action="https://www.rdstation.com.br/api/1.2/conversions" method="post">
+					<input type='hidden' name="token_rdstation" id="token_rdstation" value="bcc49d02eaa402128d828b0ebccc8217">
+					<input type='hidden' name="identificador" id="identificador" value="Contato pelo site">
 						<div class="row uniform">
 							<div class="6u 12u$(small)">
 								<input name="name" id="name" value="" placeholder="Name" type="text">
@@ -139,7 +185,7 @@
 								<input name="email" id="email" value="" placeholder="Email" type="email">
 							</div>
 							<div class="12u$">
-								<textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
+								<textarea name="mensagem" id="mensagem" placeholder="Message" rows="6"></textarea>
 							</div>
 							<div class="12u$">
 								<ul class="actions">
@@ -154,56 +200,11 @@
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="container">
-					<section class="links">
-						<div class="row">
-							<section class="3u 6u(medium) 12u$(small)">
-								<h3>Distribuidoras</h3>
-								<ul class="unstyled">
-									<li><a href="#">Lorem ipsum dolor sit</a></li>
-									<li><a href="#">Nesciunt itaque, alias possimus</a></li>
-									<li><a href="#">Optio rerum beatae autem</a></li>
-									<li><a href="#">Nostrum nemo dolorum facilis</a></li>
-									<li><a href="#">Quo fugit dolor totam</a></li>
-								</ul>
-							</section>
-							<section class="3u 6u$(medium) 12u$(small)">
-								<h3>Transportadoras</h3>
-								<ul class="unstyled">
-									<li><a href="#">Lorem ipsum dolor sit</a></li>
-									<li><a href="#">Reiciendis dicta laboriosam enim</a></li>
-									<li><a href="#">Corporis, non aut rerum</a></li>
-									<li><a href="#">Laboriosam nulla voluptas, harum</a></li>
-									<li><a href="#">Facere eligendi, inventore dolor</a></li>
-								</ul>
-							</section>
-							<section class="3u 6u(medium) 12u$(small)">
-								<h3>Motoristas</h3>
-								<ul class="unstyled">
-									<li><a href="#">Lorem ipsum dolor sit</a></li>
-									<li><a href="#">Distinctio, inventore quidem nesciunt</a></li>
-									<li><a href="#">Explicabo inventore itaque autem</a></li>
-									<li><a href="#">Aperiam harum, sint quibusdam</a></li>
-									<li><a href="#">Labore excepturi assumenda</a></li>
-								</ul>
-							</section>
-							<section class="3u$ 6u$(medium) 12u$(small)">
-								<h3>Ajuda</h3>
-								<ul class="unstyled">
-									<li><a href="#">Lorem ipsum dolor sit</a></li>
-									<li><a href="#">Recusandae, culpa necessita nam</a></li>
-									<li><a href="#">Cupiditate, debitis adipisci blandi</a></li>
-									<li><a href="#">Tempore nam, enim quia</a></li>
-									<li><a href="#">Explicabo molestiae dolor labore</a></li>
-								</ul>
-							</section>
-						</div>
-					</section>
 					<div class="row">
 						<div class="8u 12u$(medium)">
 							<ul class="copyright">
 								<li>&copy; FreteAgil. Todos os direitos reservados.</li>
 								<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-								<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
 							</ul>
 						</div>
 						<div class="4u$ 12u$(medium)">
@@ -215,16 +216,15 @@
 									<a href="http://twitter.com/meufreteagil" class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
 								</li>
 								<li>
-									<a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+									<a  href="https://plus.google.com/u/2/114733157570803137080/posts/p/pub" class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
 								</li>
 								<li>
-									<a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+									<a href='https://www.linkedin.com/company/frete-agil' class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</footer>
-
 	</body>
 </html>
