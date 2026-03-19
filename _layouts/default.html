@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% seo %}
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a href="{{ '/' | relative_url }}"><strong>{{ site.title }}</strong></a>
+        <nav>
+          <a href="{{ '/' | relative_url }}">Início</a>
+          <a href="{{ '/sobre/' | relative_url }}">Sobre</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <article class="card">
+        {% if page.title and page.url != '/' %}
+          <h1>{{ page.title }}</h1>
+        {% endif %}
+        {{ content }}
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small>Feito com Jekyll e GitHub Pages.</small>
+      </div>
+    </footer>
+  </body>
+</html>

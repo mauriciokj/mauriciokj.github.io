@@ -1,0 +1,15 @@
+title: Mauricio Krzesinski
+email: 
+description: >-
+  Blog pessoal sobre software, produtos e bastidores de desenvolvimento.
+baseurl: ""
+url: "https://mauriciokj.github.io"
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+timezone: America/Sao_Paulo
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+kramdown:
+  input: GFM
