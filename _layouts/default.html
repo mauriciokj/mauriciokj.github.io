@@ -24,6 +24,28 @@
           <h1>{{ page.title }}</h1>
         {% endif %}
         {{ content }}
+
+        {% if page.url != '/' and page.url != '/sobre/' %}
+          <hr style="margin: 40px 0; border: 0; border-top: 1px solid var(--border);">
+          <section>
+            <h2>Comentários</h2>
+            <script src="https://giscus.app/client.js"
+              data-repo="mauriciokj/mauriciokj.github.io"
+              data-repo-id="MDEwOlJlcG9zaXRvcnkzODg0OTE0Ng=="
+              data-category="General"
+              data-category-id="DIC_kwDOAlDKes4C4ytJ"
+              data-mapping="pathname"
+              data-strict="0"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="bottom"
+              data-theme="preferred_color_scheme"
+              data-lang="pt"
+              crossorigin="anonymous"
+              async>
+            </script>
+          </section>
+        {% endif %}
       </article>
     </main>
 
